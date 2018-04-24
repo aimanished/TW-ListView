@@ -29,7 +29,17 @@ public class ModuleAdapter extends ArrayAdapter<Modules> {
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.row,parent,false);
         tv = (TextView)rowView.findViewById(R.id.textView);
-        
+        imageView = (ImageView)rowView.findViewById(R.id.imageView);
+        Modules currentModules = modules.get(position);
+        tv.setText(currentModules.getModulesCode());
+
+        if(currentModules.isProgramming()){
+            imageView.setImageResource(R.drawable.prog);
+        }else{
+            imageView.setImageResource(R.drawable.nonprog);
+        }
+    return rowView;
+
     }
 
 }
