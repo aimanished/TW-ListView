@@ -30,11 +30,11 @@ public class SecondActivity extends AppCompatActivity {
         modules = new ArrayList<Modules>();
         AA = new ModuleAdapter(this,R.layout.row,modules);
 lv.setAdapter(AA);
-        if(year == "Year 1"){
+        if(year.equalsIgnoreCase("year 1")){
             modules.add(new Modules("C105",true));
             modules.add(new Modules("C208",true));
             modules.add(new Modules("C111",false));
-        }else if(year == "Year 2"){
+        }else if(year.equalsIgnoreCase("year 2")){
             modules.add(new Modules("C203",true));
             modules.add(new Modules("C235",false));
             modules.add(new Modules("C273",true));
