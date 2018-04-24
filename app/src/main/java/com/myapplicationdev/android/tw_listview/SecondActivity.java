@@ -31,19 +31,19 @@ public class SecondActivity extends AppCompatActivity {
         AA = new ModuleAdapter(this,R.layout.row,modules);
 lv.setAdapter(AA);
         if(year == "Year 1"){
-            modules.add(new Modules("nskjad",true));
-            modules.add(new Modules("nskjad",true));
-            modules.add(new Modules("nskjad",false));
+            modules.add(new Modules("C105",true));
+            modules.add(new Modules("C208",true));
+            modules.add(new Modules("C111",false));
         }else if(year == "Year 2"){
-            modules.add(new Modules("nskjad",true));
-            modules.add(new Modules("nskjad",false));
-            modules.add(new Modules("nskjad",true));
+            modules.add(new Modules("C203",true));
+            modules.add(new Modules("C235",false));
+            modules.add(new Modules("C273",true));
 
         }
 else{
-            modules.add(new Modules("nskjad",true));
-            modules.add(new Modules("nskjad",false));
-            modules.add(new Modules("nskjad",true));
+            modules.add(new Modules("C347",true));
+            modules.add(new Modules("C308",false));
+            modules.add(new Modules("C349",true));
         }
 
     }
