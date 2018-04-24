@@ -10,7 +10,7 @@ public class SecondActivity extends AppCompatActivity {
 
     ListView lv;
     TextView tvYear;
-
+    ImageView ivProg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
 
         lv = (ListView) this.findViewById(R.id.lvModules);
         tvYear = (TextView) findViewById(R.id.tvYear);
+        ivProg = (ImageView) findViewById(R.id.ivProgram)
 
         Intent i = getIntent();
         String year = i.getStringExtra("Aho Beast");
